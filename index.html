@@ -2,16 +2,29 @@
 <html>
 <head>
 <style>
-div {
+.container {
+  position: relative;
+  width: 930px; /* width of box + image space */
+  margin: 40px auto;
+}
+
+.box {
   background-color: lightgrey;
   width: 800px;
   border: 15px solid green;
   padding: 50px;
-  margin: 20px;
-  position: absolute;
-  right: 0;
   border-radius: 25px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15)
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  margin-left: auto;   /* keeps it aligned to the right */
+}
+
+.overlap-image {
+  position: absolute;
+  bottom: -60px;   /* Moves image below the box */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;    /* Adjust size */
+  z-index: 2;      /* Places image above the box */
 }
 </style>
 </head>
@@ -19,10 +32,11 @@ div {
 
 <h2>Demonstrating the Box Model</h2>
 
-<p>The CSS box model is essentially a box that wraps around every HTML element.</p>
-<p>It consists of (from innermost part to outermost part): content, padding, border, and margin.</p>
+<div class="container">
 
-<div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-
-</body>
-</html>
+  <div class="box">
+    This text is the content of the box. We have added a 50px padding,
+    20px margin and a 15px green border. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </div>
