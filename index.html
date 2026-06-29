@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
 <style>
 .container {
   position: relative;
   width: 1200px; /* width of box + image space */
   margin: 40px auto;
+  font-family: "Jost";
+  
 }
 
 .box {
@@ -13,17 +22,30 @@
   width: 400px;
   border-style: solid;
   border-color: #81A430;
-  border-width: 5px;
+  border-width: 4.5px;
   padding: 20px 20px;
   border-radius: 25px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
   margin-left: 340px;   /* keeps it aligned to the right */
 }
 
+.box2 {
+  background-color: #DCC5A5;
+  width: 400px;
+  border-style: solid;
+  border-color: #81A430;
+  border-width: 4.5px;
+  padding: 20px 20px;
+  border-radius: 25px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  margin-left: 340px;   /* keeps it aligned to the right */
+  margin-top: 20px;
+}
+
 .overlap-image {
   position: absolute;
-  bottom: -80px;   /* Moves image below the box */
-  left: 72%;
+  bottom: -10px;   /* Moves image below the box */
+  left: 72.8%;
   transform: translateX(-50%);
   width: 300px;    /* Adjust size */
   z-index: 2;      /* Places image above the box */
@@ -34,9 +56,10 @@
   top: 10px;
   left: 0px;            /* Binds image to top-left corner */
   width: 300px;
-  min-height: 300px;
+  min-height: 500px;
   border-radius: 10em 0 0em 0;
 }
+
 </style>
 </head>
 
@@ -88,7 +111,6 @@
       }
 
     </style>
-</head>
 
 <body>
     <div class="icon-bar">
@@ -96,24 +118,26 @@
         <a href="#"><i class="fa fa-linkedin"></i></a>
         <a href="#"><i class="fa fa-envelope"></i></a>
         
+<img class="overlap-image"  src="https://static.vecteezy.com/system/resources/previews/065/586/662/non_2x/bush-with-lush-green-leaves-and-delicate-transparent-flowers-displayed-on-a-transparent-background-for-a-fresh-botanical-aesthetic-bush-with-green-leaves-and-transparent-flowers-on-transparent-free-png.png">
+
+        
     </div>
 </body>
 
   <!-- ICONS -->
-    This text is the content of the box. We have added a 50px padding,
-    20px margin and a 15px green border. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat.
+    Hi! I'm Amicie, a Cognitive Science student studying at UPenn. I'm passionate about User Research, specifically in games. 
 
+</div> 
+
+<div class="box2">
+</div>
+  
 
 <!---
   <img class="overlap-image" src="https://i.ibb.co/YF7rbMDN/vecteezy-green-vine-creeper-or-ivy-hanging-from-above-or-climbing-45357323.png" alt="vecteezy-green-vine-creeper-or-ivy-hanging-from-above-or-climbing-45357323" alt="Image">
   
   ---> 
-<img class="overlap-image"  src="https://static.vecteezy.com/system/resources/previews/065/586/662/non_2x/bush-with-lush-green-leaves-and-delicate-transparent-flowers-displayed-on-a-transparent-background-for-a-fresh-botanical-aesthetic-bush-with-green-leaves-and-transparent-flowers-on-transparent-free-png.png">
 
-
-</body>
 
 
 </html>
