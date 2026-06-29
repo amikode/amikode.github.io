@@ -10,10 +10,9 @@
 
 <style>
 .container {
-  position: relative;
   display: grid;
-  place-items: center;     /* Centers horizontally and vertically at once */
-  height: 100vh;
+  place-items: center;  
+  position: relative;
   width: 1200px; /* width of box + image space */
   margin: 40px auto;
   font-family: "Jost";
@@ -29,6 +28,7 @@
   padding: 20px 20px;
   border-radius: 25px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  margin-left: 340px;   /* keeps it aligned to the right */
 }
 
 .box2 {
@@ -40,13 +40,14 @@
   padding: 20px 20px;
   border-radius: 25px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  margin-left: 340px;   /* keeps it aligned to the right */
   margin-top: 20px;
 }
 
 .overlap-image {
   position: absolute;
   bottom: -10px;   /* Moves image below the box */
-  left: 72.8%;
+  left: 90%;
   transform: translateX(-50%);
   width: 300px;    /* Adjust size */
   z-index: 2;      /* Places image above the box */
@@ -59,6 +60,7 @@
   width: 300px;
   min-height: 500px;
   border-radius: 10em 0 0em 0;
+  margin-left: 200px
 }
 
 </style>
@@ -70,7 +72,7 @@
 
 <div class="container">
 
-<img src="https://i.pinimg.com/1200x/a7/1c/a9/a71ca983d8345432d4ad5cbc6bc288df.jpg" alt="Description" class="corner-image">
+<img src="https://i.pinimg.com/736x/9b/94/b3/9b94b30400bc3ac76af3a08424ab9bb9.jpg" alt="Description" class="corner-image">
 
 
   <div class="box">
