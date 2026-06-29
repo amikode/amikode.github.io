@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
-<!DOCTYPE html>
-<html>
-<head>
 
+
+<!--- FONT SOURCE ---> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
-
+<!--- CSS STYLE SETUP ---> 
 <style>
+
+/* Main Container */
 .container {
   display: grid;
   place-items: center;  
   position: relative;
   width: 1200px; /* width of box + image space */
   margin: 40px auto;
-  font-family: "Jost";
-   
-  
+  font-family: "Jost";    
 }
 
+/* 1st Textbox (Top)*/
 .box {
   background-color: #DCC5A5;
   width: 400px;
@@ -34,6 +34,7 @@
   margin-left: 340px;   /* keeps it aligned to the right */
 }
 
+/* 2nd Textbox (Bottom) */
 .box2 {
   background-color: #DCC5A5;
   width: 400px;
@@ -47,6 +48,7 @@
   margin-top: 20px;
 }
 
+/* Flowers Image (Hanging, Right) */
 .overlap-image {
   position: absolute;
   margin-bottom: 300px;   /* Moves image below the box */
@@ -56,6 +58,7 @@
   z-index: 2;      /* Places image above the box */
 }
 
+/* Clovers Image (Rounded, Left)  */
 .corner-image {
   position: absolute;    /* Pulls image out of normal document flow */
   top: 10px;
@@ -70,6 +73,7 @@ body {
 	padding: 0;
 }
 
+/* Leaf Shape Code  */
 .leafcontainer {
 	margin: 50px;
     margin-left: 400px;
@@ -111,36 +115,34 @@ body {
 }
 
 </style>
-</head>
 
 
+<!--- BG COLOR ---> 
 <body style="background-color: #FAF9F2;">
 
 
 <div class="container">
 
+
+<!--- Clovers Image (Rounded, Left) --->
 <img src="https://i.pinimg.com/736x/9b/94/b3/9b94b30400bc3ac76af3a08424ab9bb9.jpg" alt="Description" class="corner-image">
 
-
+<!--- Flowers Image (Hanging, Right) ---> 
 <img class="overlap-image"  src="https://static.vecteezy.com/system/resources/previews/065/586/662/non_2x/bush-with-lush-green-leaves-and-delicate-transparent-flowers-displayed-on-a-transparent-background-for-a-fresh-botanical-aesthetic-bush-with-green-leaves-and-transparent-flowers-on-transparent-free-png.png">
 
   <div class="box">
   
-
-  <!-- ICONS -->
+<!-- Icon Bar HTML -->
      <meta charset="UTF-8">
     <meta name="viewport" content=
         "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 
-
-    <title>Icon Bar using HTML and CSS</title>
-
+<!-- Icon Bar CSS -->
     <style>
         .icon-bar {
             overflow: hidden;
- 
         }
 
         .icon-bar a {
@@ -165,7 +167,7 @@ body {
 
     </style>
 
-
+<!-- Icon Bar HTML -->
 <body>
     <div class="icon-bar">
        <a href="#"><i class=""></i></a>
@@ -178,18 +180,18 @@ body {
     </div>
 </body>
 
-  <!-- ICONS -->
+  <!-- Text in Box 1 -->
     Hi! I'm Amicie, a Cognitive Science student studying at UPenn. I'm passionate about User Research, specifically in games. 
 
 </div> 
 
 
-
+ <!-- Text in Box 2 -->
 <div class="box2">
     Hi! I'm Amicie, a Cognitive Science student studying at UPenn. I'm passionate about User Research, specifically in games. 
 </div>
 
-
+ <!-- Leaf HTML-->
 <div class="leafcontainer">
 	<div class="leaf-1"></div>
 	<div class="leaf-2"></div>
@@ -198,15 +200,6 @@ body {
 	</div>
 </div>
 <p><a href="https://1-notes.com/css-shape-leaf-design/" target="_blank" rel="noopener"></a></p>
-
-
-
-<!---
-  <img class="overlap-image" src="https://i.ibb.co/YF7rbMDN/vecteezy-green-vine-creeper-or-ivy-hanging-from-above-or-climbing-45357323.png" alt="vecteezy-green-vine-creeper-or-ivy-hanging-from-above-or-climbing-45357323" alt="Image">
-  
-  ---> 
-
-
 
 
 </html>
