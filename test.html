@@ -1,76 +1,122 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--- IMPORTS ---> 
+<!-- font src ---> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- icon bar src -->
+     <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+
+
+
+<!-- flex box --> 
+
 <style>
-* {
-  box-sizing: border-box;
+body {
+  font: 600 14px/24px "Jost";
+  background-color: #FAF9F2;
 }
-
-.menu {
-  float: left;
-  width: 20%;
+h1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.container {
+  background: #eaeaed;
+  margin-bottom: 24px;
+  *zoom: 1;
+}
+.container,
+section,
+aside {
+  border-radius: 6px;
+}
+section,
+aside {
+  background: #2db34a;
+  margin: 1.858736059%;
+  padding: 20px 0;
   text-align: center;
 }
-
-.menu a {
-  background-color: #e5e5e5;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: black;
-}
-
-.main {
+section {
   float: left;
+  width: 30%;
+}
+aside {
+  float: right;
   width: 60%;
-  padding: 0 20px;
+  background-color: #DCC5A5;
+  border-style: solid;
+  border-color: #81A430;
+  border-width: 4.5px;
+  border-radius: 25px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
 }
 
-.right {
-  background-color: #e5e5e5;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
 </style>
-</head>
-<body style="font-family:Verdana;color:#aaaaaa;">
 
-<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-  <h1>Hello World</h1>
-</div>
+<!-- icon bar -->
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 4</a>
-  </div>
+<style> 
+.icon-bar {
+            overflow: hidden;
+        }
 
-  <div class="main">
-    <h2>Lorum Ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-  </div>
+        .icon-bar a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            padding-top: 10px;
+  			padding-bottom: 25px;
+            text-decoration: none;
+            font-size: 30px;
+           
+        }
+        
+        .fa-envelope:hover {
+    	color: #CDE8D5;
+}
+       .fa-linkedin:hover {
+        color: #CDE8D5;
+      }
 
-  <div class="right">
-    <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-  </div>
-</div>
+</style>
 
-<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">Â© copyright w3schools.com</div>
 
+<h1>100% Wide Container</h1>
+
+<div class="container">
+  <section>Section</section>
+  
+  <aside>
+  
+  <!-- Icon Bar HTML -->
+<body>
+    <div class="icon-bar">
+       <a href="#"><i class=""></i></a> <!-- for spacing --> 
+        <a href="https://www.linkedin.com/in/amicie-koslow-928b3b255"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:ackoslow@gmail.com"><i class="fa fa-envelope"></i></a>
+		<h1 style="text-decoration: underline white; text-underline-offset: 5px;">Amicie</h1>
+                   
+    </div>
 </body>
-</html>
+  
+  </aside>
+  
+ 
+</div>
+
