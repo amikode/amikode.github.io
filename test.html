@@ -81,7 +81,45 @@
     }
 
 
+    /* BUTTON */
+    
+    .button-row {
+  display: flex;
+  flex-direction: row; /* Aligns items horizontally */
+  gap: 12px;           /* Sets space between the buttons */
+  justify-content: center;
+  /* Options: center, flex-end, space-between */
+  padding: 10px;
+}
+    
+   .responsive-btn {
+  /* Adapts to container size, up to a maximum width */
+  width: 20%;
+  max-width: 100px; 
+  font-family: "Jost", sans-serif;
 
+
+ 
+  
+  /* Relative padding ensures text stays centered and scales proportionally */
+  padding: 1em 1.5em; 
+  
+  /* Uses rem so font scales based on root settings */
+  font-size: 1rem; 
+  border: none;
+  background-color: #3BA026;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Adjust the core properties on smaller viewports */
+@media (max-width: 600px) {
+  .responsive-btn {
+    font-size: 0.700rem; /* Scales text and padding down slightly */
+    max-width: 100%;    /* Allows full-width "block" appearance on mobile */
+  }
+}
     /* NATURE IMG */
 
     section {
@@ -481,11 +519,17 @@
 
       </p>
 
-
     </aside>
-
-
+    
   </div>
+
+
+<div class="button-row">
+  <button class="responsive-btn">Home</button>
+  <button class="responsive-btn">Resume</button>
+   <button class="responsive-btn">Projects</button>
+</div>
+
 
 
 </body>
