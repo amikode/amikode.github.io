@@ -101,7 +101,18 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  white-space: nowrap;}
+  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+   }
+   
+  /* Smoothly animates changes over 0.3 seconds */
+
+
+/* Styling what happens when the mouse hovers over it */
+.responsive-btn:hover{
+ background-color: #89BF47; /* Green */
+  color: white;
+}
 
 /* Adjust the core properties on smaller viewports */
 @media (max-width: 600px) {
@@ -510,8 +521,10 @@
       </p>
 <div class="button-row">
   <button class="responsive-btn">Home</button>
-  <button class="responsive-btn">Resume</button>
-   <button class="responsive-btn">Projects</button>
+  <a href="path/to/your/file.pdf" style="text-decoration: none"; class="responsive-btn" download>
+  Resume
+</a>
+  <button class="responsive-btn">Projects</button>
 </div>
     </aside>
     
