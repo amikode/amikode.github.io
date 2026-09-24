@@ -1,0 +1,72 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+  padding: 1rem;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* Scales fluidly between 220px and 400px wide based on viewport width */
+  width: clamp(190px, 30vw, 300px);
+  /* Scales padding proportionally */
+  padding: clamp(1rem, 3vw, 2rem);
+  gap: clamp(0.5rem, 1.5vw, 2rem);
+  
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-title {
+  /* Fluid font sizing: minimum, preferred, maximum */
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  margin: 0;
+}
+
+.card-text {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  margin: 0;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+
+.matrix-filter {
+  /* Converts the image to grayscale, applies a sepia warmth, and shifts the hue to green */
+  filter: grayscale(80%) sepia(50%) hue-rotate(70deg) saturate(300%);
+}
+
+</style> 
+
+
+
+<div class="card">
+    <img src="https://img.itch.zone/aW1nLzI4ODY3MjE1LnBuZw==/315x250%23c/N3m4pQ.png" alt="Sample image">
+    <h2 class="card-title">Buzzworthy</h2>
+    <p class="card-text">Key Actions: PM; Art; Narrative; Game Design</p>
+      <p class="card-text">Key Tools:  Trello; Piskel</p>
+  </div>
+  <div class="card">
+    <img class="matrix-filter" src="https://img.itch.zone/aW1nLzE3NDE2MjIyLnBuZw==/315x250%23c/ALKQNC.png" alt="Sample image">
+    <h2 class="card-title">Epochs to Eons</h2>
+    <p class="card-text">Key Actions: PM; Art; Game Design</p>
+      <p class="card-text">Key Tools:  Trello; Piskel</p>
+  </div>
