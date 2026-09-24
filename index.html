@@ -37,7 +37,42 @@
 
 
   <style>
+  
+* {
+  box-sizing: border-box;
+}
 
+.card {
+  /* 1. Core responsiveness rules */
+  width: 90%;             /* Shrinks smoothly on small screens (takes up 90% of available width) */
+  max-width: 350px;       /* Limits how large the card can grow on massive screens */
+  
+  /* 2. Optional styling properties */
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;       /* Keeps child elements (like images) clipped to the rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  margin: 20px auto;     /* Centers the card horizontally */
+}
+
+/* Ensure images inside the card scale down fluidly without breaking the bounds */
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+    
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
     /* PAGE SETTINGS */
 
@@ -81,7 +116,17 @@
     }
     
 
+    .container-second {
+  width: 92%;
+  max-width: 1700px;
+  margin: 0 auto 100px;
 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: clamp(20px, 5vw, 90px);
+}
 
     /* BUTTON */
     
@@ -449,7 +494,7 @@
 
 </head>
 
-
+<div class="page-container">
 
 <body>
 
@@ -528,7 +573,29 @@
   <a href="https://strawfumi.itch.io/" style="text-decoration: none"; class="responsive-btn">Projects</a>
 </div>
     </aside>
-    
+
   </div>
+ 
+  <div class="container-second">
+    <aside style="padding-top: px";>
+    
+     <p class="intro-text">
+
+
+        Little me adored collaborative games like Minecraft and Sky:COTL. In 2018, she spent a life-changing summer at <a href="https://www.girlsmakegames.com/" style="text-decoration: none; color: #51750B";>Girls Make Games</a>, where she learned working together to make games feels just as rewarding, if not more. I later returned to GMG, working my way up from floater, to counselor, to tech lead.</p>
+        
+    <p class="intro-text">While I certainly haven't lost my love of game dev (when time allows, I jam), I'm now interested in exploring roles that integrate my academic interests (e.g., psychology), and/or allow me to utilize the strong organizational and problem-solving skills I've developed.</p>
+    
+     
+ <!--   <p class="intro-text">GUR's a better fit, merging my interests in psych, analysis Through listening to player feedback, and optimizing games, I hope to return the favor back to the community that shaped who I am today. </p>
+      <p class="intro-text">Fun fact! </p> --> 
+      
+    </aside>
+    
+      
+      </div> 
+ </div> 
+ 
 </body>
+
 </html>
