@@ -42,11 +42,14 @@
   box-sizing: border-box;
 }
 
+    /* IMAGE FILTER */
+
 .matrix-filter {
-  /* Converts the image to grayscale, applies a sepia warmth, and shifts the hue to green */
+  /* green filter / shift hue to green */
   filter: grayscale(80%) sepia(50%) hue-rotate(70deg) saturate(300%);
 }
 
+  /* CARD */
 
 .card-container {
   display: flex;
@@ -60,9 +63,9 @@
 .card {
   display: flex;
   flex-direction: column;
-  /* Scales fluidly between 220px and 400px wide based on viewport width */
+  /* scales b/w 2 values wide based on viewport width */
   width: clamp(190px, 30vw, 300px);
-  /* Scales padding proportionally */
+  /* scales padding proportionally */
   padding: clamp(1rem, 3vw, 2rem);
   gap: clamp(0.5rem, 1.5vw, 2rem);
   
@@ -79,7 +82,7 @@
 }
 
 .card-title {
-  /* Fluid font sizing: minimum, preferred, maximum */
+  /* scaling font sizing */
   font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   margin: 0;
 }
@@ -119,7 +122,7 @@
 
 
 
-    /* Main */
+    /* MAIN */
 
     .container {
 
@@ -158,11 +161,9 @@
     
     .button-row {
   display: flex;
-  flex-direction: row; /* Aligns items horizontally */
-  gap: 5%;           /* Sets space between the buttons */
+  flex-direction: row; /* aligns items horizontally */
+  gap: 5%;           /* space b/w buttons */
   justify-content: center;
-  
-  /* Options: center, flex-end, space-between */
   padding: 10px;
 }
     
@@ -180,20 +181,20 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
    }
    
-  /* Smoothly animates changes over 0.3 seconds */
+  /* animates chs over 0.3 secs */
 
 
-/* Styling what happens when the mouse hovers over it */
+/* when mouse hovers */
 .responsive-btn:hover{
- background-color: #89BF47; /* Green */
+ background-color: #89BF47;
   color: white;
 }
 
-/* Adjust the core properties on smaller viewports */
+/* adjust props on phone screen */
 @media (max-width: 600px) {
   .responsive-btn {
-    font-size: 0.700rem; /* Scales text and padding down slightly */
-    max-width: 100%;    /* Allows full-width "block" appearance on mobile */
+    font-size: 0.700rem; /* scale text + padding down */
+    max-width: 100%;    
   }
 }
     /* NATURE IMG */
@@ -314,7 +315,7 @@
 
       padding: 0;
 
-      /* Prevent title from hitting icons */
+      /* preseerve space b/w title and icons */
 
       padding-right: 70px;
 
@@ -322,7 +323,7 @@
       text-align: left;
 
 
-      /* Larger on computers */
+      /* bigger on computers */
 
       font-size:
         clamp(1.3rem, 3.2vw, 3.2rem);
@@ -365,7 +366,7 @@
       text-align: center;
 
 
-      /* Larger on computers */
+      /* bigger on computers */
 
       font-size:
         clamp(0.7rem, 2vw, 2.2rem);
@@ -377,7 +378,7 @@
       font-weight: 600;
 
 
-      /* Keeps text inside */
+      /* keeps text inside */
 
       overflow-wrap: anywhere;
 
